@@ -1,3 +1,16 @@
+textarea {
+  width: 40%;
+  height: 10%;
+  margin: 2%;
+  /* padding: 12px 20px; */
+  box-sizing: border-box;
+  border: 2px solid #6372ff;
+  border-radius: 4px;
+  background-color: #777b7b;
+  font-size: 18px;
+  resize: none;
+}
+
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -166,8 +179,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #33f9c4;
+  background-image: linear-gradient(to right, #33f9c4 0%, #28c361 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +197,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #017270;
 }
 .btn:active,
 .btn.active {
@@ -221,9 +234,9 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 40px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -318,6 +331,7 @@ header .intro-text {
 }
 #services h2 {
   color: #fff;
+  text-transform: lowercase;
 }
 #services .section-title h2::after {
   position: absolute;
@@ -345,6 +359,7 @@ header .intro-text {
   color: #fff;
 }
 #services p {
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
 }
 #services .service-desc {
@@ -460,7 +475,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #515151 0%, #748291 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -504,7 +519,7 @@ header .intro-text {
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
+  color: #2feb9c;
   background: #fff;
 }
 label {

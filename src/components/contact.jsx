@@ -9,6 +9,7 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [isMessageSent, setMessageSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,11 +21,12 @@ export const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("service_20t83cu", "template_rl12bbb", e.target, "MLJ1adxR3yvx1Kg-D")
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          setMessageSent(true);
         },
         (error) => {
           console.log(error.text);
@@ -88,8 +90,8 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                <button type="submit" className="btn btn-custom btn-lg" disabled={isMessageSent}>
+                  {isMessageSent ? "Sent" : "Send Message"}
                 </button>
               </form>
             </div>
@@ -105,12 +107,12 @@ export const Contact = (props) => {
               </p>
             </div>
             <div className="contact-item">
-              <p>
+              {/* <p>
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
-              </p>
+              </p> */}
             </div>
             <div className="contact-item">
               <p>
@@ -125,21 +127,21 @@ export const Contact = (props) => {
             <div className="row">
               <div className="social">
                 <ul>
-                  <li>
+                  {/* <li>
                     <a href={props.data ? props.data.facebook : "/"}>
                       <i className="fa fa-facebook"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href={props.data ? props.data.twitter : "/"}>
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href={props.data ? props.data.youtube : "/"}>
                       <i className="fa fa-youtube"></i>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -149,10 +151,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2023 gitoms{" "}
           </p>
         </div>
       </div>

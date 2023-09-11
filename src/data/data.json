@@ -1,21 +1,17 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "give it to me straight",
+    "paragraph": "uncover political bias hiding in text"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Politics is omnipresent in our hometown of Washington DC. The divide between left and right appears deeper than ever and many fear the body politic is broken. We disagree. At the nexus of artificial intelligence and public political data, we saw an opportunity. We sought to use state of the art tools to expose political bias in text. No longer can the news sneak a slanted political agenda into their stories. They will have to... Give It TO Me Straight -- to GITOMS.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "artificial intelligence expertise",
+      "state of the art technology"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "manually curated datasets",
+      "indisputable training sources"
     ]
   },
   "Gallery": [
@@ -152,11 +148,11 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "Washington, DC",
     "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "email": "gitomstraight@gmail.com",
     "facebook": "fb.com",
-    "twitter": "twitter.com",
+    "twitter": "https://twitter.com/gitomstraight",
     "youtube": "youtube.com"
   },
   "Features": [
