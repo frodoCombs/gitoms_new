@@ -47,7 +47,7 @@ export const Services = (props) => {
           if (a > 0.95){
             responseMessage = "This is very biased to the ";
             responseOutput = responseData.predictions[0].displayNames[0];
-          } else if ( a > 0.85){
+          } else if ( a > 0.65){
             responseMessage = "This is biased to the ";
             responseOutput = responseData.predictions[0].displayNames[0];
           } else {
@@ -59,7 +59,7 @@ export const Services = (props) => {
           if (b > 0.95){
             responseMessage = "This is very biased to the ";
             responseOutput = responseData.predictions[0].displayNames[1];
-          } else if ( b > 0.85){
+          } else if ( b > 0.65){
             responseMessage = "This is biased to the ";
             responseOutput = responseData.predictions[0].displayNames[1];
           }
