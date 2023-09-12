@@ -11,7 +11,7 @@ export const Services = (props) => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://44.205.71.6:3000/', {mode:'cors'});
+      const response = await fetch('https://www.gitoms-gdat.xyz//', {mode:'cors'});
       const data = await response.text();
       setFileContents(data);
     } catch (error) {
